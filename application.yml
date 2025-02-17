@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://eos-rds-01.cv0sq00asw7c.us-east-1.rds.amazonaws.com:3306/catalog
+    url: jdbc:mysql://eos-rds-01.cv0sq00asw7c.us-east-1.rds.amazonaws.com:3306/edwiki?createDatabaseIFNotExist=true
     username: admin
     password: admin123
     driver-class-name: com.mysql.cj.jdbc.Driver
