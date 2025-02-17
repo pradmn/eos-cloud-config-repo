@@ -11,9 +11,9 @@ spring:
     show-sql: true
   
 # Producer properties
-    kafka:
-      bootstrap-servers: b-2.eoskafka01.hv98xb.c12.kafka.us-east-1.amazonaws.com:9092
-      group-id: group_id
+  kafka:
+    bootstrap-servers: b-2.eoskafka01.hv98xb.c12.kafka.us-east-1.amazonaws.com:9092
+    group-id: group_id
 topic:
   name:
     producer: ed-topic-1 
