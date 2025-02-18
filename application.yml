@@ -12,7 +12,7 @@ spring:
   
 # Producer properties
   kafka:
-    bootstrap-servers: b-2.eoskafka01.hv98xb.c12.kafka.us-east-1.amazonaws.com:9092
+    bootstrap-servers: b-1.eoskafka01.r4jo4c.c12.kafka.us-east-1.amazonaws.com:9092
     group-id: group_id
 topic:
   name:
@@ -32,8 +32,8 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey: AKIAYMMFC5FDT3LSUFJB 
-            secretKey: 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 
+            accessKey: AKIA5RJWANURZTCV756N 
+            secretKey: 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
 
 application:
     bucket:
@@ -46,4 +46,4 @@ logging:
                 util:
                     EC2MetadataUtils: error
  
-baseUrl: http://www.edshopper.com:5555/v1
+baseUrl: http://3.90.155.83:5555/v1
