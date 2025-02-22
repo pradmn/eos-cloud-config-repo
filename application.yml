@@ -12,7 +12,7 @@ spring:
   
 # Producer properties
   kafka:
-    bootstrap-servers: b-1.eoskafka01.r4jo4c.c12.kafka.us-east-1.amazonaws.com:9092
+    bootstrap-servers: b-2.eoskafka01.hq5bsc.c12.kafka.us-east-1.amazonaws.com:9092
     group-id: group_id
 topic:
   name:
@@ -32,12 +32,12 @@ cloud:
         stack:
             auto: false
         credentials:
-            accessKey:  
-            secretKey: 
+            accessKey: ${AWS_ACCESS_KEY_ID}
+            secretKey: ${AWS_SECRET_ACCESS_KEY}
 
 application:
     bucket:
-        name: edwiki-webserver-config 
+        name: eos-catalog-images 
 
 logging:
     level:
@@ -46,4 +46,4 @@ logging:
                 util:
                     EC2MetadataUtils: error
  
-baseUrl: http://3.90.155.83:5555/v1
+baseUrl: http://eos-lb-360953496.us-east-1.elb.amazonaws.com:5555/v1
