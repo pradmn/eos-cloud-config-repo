@@ -12,7 +12,7 @@ spring:
   
 # Producer properties
   kafka:
-    bootstrap-servers: b-2.eoskafka01.lmrdly.c12.kafka.us-east-1.amazonaws.com:9092
+    bootstrap-servers: b-1.eoskafka01.oam601.c12.kafka.us-east-1.amazonaws.com:9092
     group-id: group_id
 topic:
   name:
@@ -46,4 +46,4 @@ logging:
                 util:
                     EC2MetadataUtils: error
  
-baseUrl: http://eos-lb-1874949825.us-east-1.elb.amazonaws.com:5555/v1
+baseUrl: http://eos-lb-01-35681989.us-east-1.elb.amazonaws.com:5555/v1
